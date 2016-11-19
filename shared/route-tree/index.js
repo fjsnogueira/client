@@ -193,7 +193,7 @@ export function checkRouteState (routeDef: RouteDefNode, routeState: ?RouteState
     curState = curState.getChild(curState.selected)
   }
   if (!curDef) {
-    return `Missing route def: ${pathToString(path)}`
+    return `Route missing def: ${pathToString(path)}`
   }
   if (!curState) {
     return `Route missing state: ${pathToString(path)}`
